@@ -1,0 +1,15 @@
+{% extends "default.html" %}
+{% load static %}
+
+{% block title %}
+    Jellicle Space {% if subtitle %}- {{ subtitle }}{% endif %}
+{% endblock %}
+
+{% block context %}
+    <script type="text/javascript">
+        const csrfToken = "{{ csrf_token }}",
+            assetUrl = "{% static "/" %}",
+            userInfo = {% if userInfo is None %} null {% else %} {{ userInfo|safe }} {% endif %}
+        ;
+    </script>
+{% endblock %}

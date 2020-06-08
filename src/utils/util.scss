@@ -1,0 +1,52 @@
+.mxw {
+  &--400 {
+    max-width: 400px;
+  }
+
+  &--700 {
+    max-width: 700px;
+  }
+
+  &--800 {
+    max-width: 800px;
+  }
+
+  &--900 {
+    max-width: 900px;
+  }
+}
+
+.fadein, .fadeout {
+  opacity: 0;
+  -moz-transition: opacity 0.4s ease-in-out;
+  -o-transition: opacity 0.4s ease-in-out;
+  -webkit-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.fadein {
+  opacity: 1;
+}
+
+
+.debug-border {
+  &--green {
+    border: 1px dotted green;
+  }
+
+  &--red {
+    border: 1px dotted red;
+  }
+
+  &--blue {
+    border: 1px dotted blue;
+  }
+
+  &--black {
+    border: 1px dotted black;
+  }
+
+  &--yellow {
+    border: 1px dotted yellow;
+  }
+}

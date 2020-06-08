@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        {% block title %}{% endblock title %}
+    </title>
+
+    {% include "includes/favicon.html" %}
+
+    <link href="{% static "dist/main.css" %}" rel="stylesheet">
+</head>
+
+<body>
+
+<main id="root"></main>
+
+{% block context %}{% endblock context %}
+
+<script src="{% static "dist/main.js" %}"></script>
+</body>
+</html>
